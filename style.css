@@ -1,0 +1,65 @@
+* {
+    /* reseta alguns valores padrões */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: rgb(32, 35, 41);
+    font-variant-ligatures: none;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    text-decoration-skip-ink: auto;
+    color: rgba(232, 230, 227, 0.8);
+}
+
+#titulo {
+    padding: 42px 0;
+    margin: 12px;
+    font-size: 42px;
+    border-radius: 10px;
+    border: 4px solid rgba(105, 105, 105, 0.18);
+    text-align: center;
+}
+
+/*
+  grupo -> agrupa todos os cartões dos personagens
+*/
+.grupo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: rgb(29, 32, 38); */
+    margin: 64px 32px;
+}
+
+/*
+  Estiliza o cartão de cada personagem
+*/
+.grupo .container-personagem {
+    width: 45%;
+    display: flex;
+    margin: 16px;
+    background-color: rgb(48, 52, 54);
+    border-radius: 8px;
+}
+
+/*
+  Estiliza a imagem do personagem que está dentro do cartão
+*/
+.grupo .container-personagem img {
+    object-fit: cover;
+    /* border-radius: 8px 0 0 8px; */
+    border-radius: 8px 0 0 8px;
+}
+
+/*
+  Estiliza o nome do personagem que está dentro do cartão
+*/
+.grupo .container-personagem h2 {
+    padding: 32px 24px;
+    font-size: 38px;
+}
